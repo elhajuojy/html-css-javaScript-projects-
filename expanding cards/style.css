@@ -36,7 +36,7 @@ body{
     position: relative;
     color: white;
     cursor: pointer;
-    transition:  flex 0.4s ease-in ;
+    transition:  flex 0.3s ease-in ;
     margin: 20px;
 
 }
@@ -51,7 +51,7 @@ body{
 
 .panel.active{
     flex: 3;
-    transition: opacity 0.7s ease-in 0.7s ;
+    transition: opacity 0.1s ease-in 0.1s ;
     
     
 }

@@ -67,6 +67,17 @@ nav ul li {
     
 }
 
+.container.show_nav .circle{
+    transform: rotate(-70deg);
+}
+
+
+.container.show_nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+
 .circle button{
     cursor: pointer;
     position: absolute;
