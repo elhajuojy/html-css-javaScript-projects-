@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' ,sans-serif ;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0;
+
+
+}
+
+.container{
+    background-color: #fafafa;
+    /* the point of rotate is top left */
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+
+
+}
+
+.container.show_nav{
+    transform: rotate(-20deg);
+
+}
+
+nav{
+    position: fixed;
+    bottom: 50px;
+    left :0;
+    z-index: 100;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+
+}
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transition: transform 0.4s ease-in;
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+
+}
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    
+}
+
+.circle button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+
+
+/* .circle button:focus{
+    outline: none;
+} */
+
+.circle button#open{
+    left: 50%;
+
+}
+
+.circle button#close{
+    top:50%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    
+}
+
+.content{
+    max-width: 1000px;
+    margin: 50px auto;
+
+}
+
+.content h1{
+    margin: 0;
+
+}
+.content small{
+    color: #555;
+    font-style: italic;
+
+}
+
+.content p{
+    color: #333;
+    line-height: 1.5;
+}
+
+
+.content img{
+    max-width: 100%;
+}
